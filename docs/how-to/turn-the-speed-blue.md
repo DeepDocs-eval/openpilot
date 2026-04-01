@@ -56,7 +56,7 @@ def _draw_current_speed(self, rect: rl.Rectangle) -> None:
   speed_text = str(round(self.speed))
   speed_text_size = measure_text_cached(self._font_bold, speed_text, FONT_SIZES.current_speed)
   speed_pos = rl.Vector2(rect.x + rect.width / 2 - speed_text_size.x / 2, 180 - speed_text_size.y / 2)
-  rl.draw_text_ex(self._font_bold, speed_text, speed_pos, FONT_SIZES.current_speed, 0, COLORS.white)  # <- this sets the speed text color
+  rl.draw_text_ex(self._font_bold, speed_text, speed_pos, FONT_SIZES.current_speed, 0, COLORS.WHITE)  # <- this sets the speed text color
 ```
 
 Change `COLORS.white` to make it **blue** instead of white. A nice soft blue is `#8080FF`, which you can change inline:
